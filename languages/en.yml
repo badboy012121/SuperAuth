@@ -1,0 +1,96 @@
+# English language file for SuperAuth
+# You can modify this file to customize messages
+
+prefix: '&8[&cSuperAuth&8] &r'
+
+login:
+  title: '&bLogin'
+  subtitle: '&7Use &e/login <password> &7to log in'
+  incorrect_password: '&cIncorrect password!'
+  success_chat: '&aLogin successful!'
+  tp_last_location: '&eYou have been teleported to your last location.'
+  success_title: '&aLogin successful!'
+  required: '&eUse &6/login <password> &eto log in.'
+
+register:
+  title: '&bRegistration'
+  subtitle: '&7Use &e/register <password> <confirmation> &7to create an account'
+  password_requirements: '&cPassword must be at least 6 characters, with uppercase,
+    lowercase, and a number.'
+  success_chat: '&aRegistration successful! Welcome to the server.'
+  success_title: '&aRegistration successful!'
+  already_registered: '&cYou are already registered!'
+  password_mismatch: '&cPasswords do not match!'
+  required: '&eUse &6/register <password> <confirmation> &eto register.'
+  ip_limit_exceeded: '&cThis IP address has reached the maximum allowed accounts ({limit}
+    max accounts). Contact an administrator if this is an error.'
+
+changepassword:
+  success: '&aPassword changed successfully!'
+  old_password_incorrect: '&cOld password is incorrect!'
+  password_mismatch: '&cNew passwords do not match!'
+
+admin:
+  user_unregistered: '&aPlayer &e{player} &ahas been unregistered successfully!'
+  user_not_found: '&cPlayer &e{player} &cis not registered!'
+  ip_limit_bypassed: '&aIP limit bypassed for &e{player}&a.'
+  config_reloaded: '&aConfiguration reloaded successfully!'
+  message_updated: '&aMessage &e{path} &aupdated successfully!'
+  ip_limit_updated: '&aIP limitation &e{setting} &aupdated successfully!'
+  security_updated: '&aSecurity &e{setting} &aupdated successfully!'
+  database_updated: '&aDatabase &e{setting} &aupdated successfully!'
+  language_updated: '&aLanguage changed to &e{language}&a.'
+  invalid_setting: '&cInvalid parameter. Use ''enabled'', ''max_accounts_per_ip'',
+    ''allow_ip_change'', ''ip_change_cooldown'' or ''admin_bypass''.'
+  migrate_command_not_implemented: '&cMigration command not implemented yet.'
+
+# Messages for configurable actions
+actions:
+  welcome_message: '&aWelcome to the server!'
+  registration_success: '&aRegistration successful! Welcome among us!'
+  login_success: '&aLogin successful! Welcome back!'
+  password_change_success: '&aPassword changed successfully!'
+  teleporting_to_spawn: '&7You have been teleported to spawn.'
+  teleporting_to_last_location: '&7You have been teleported to your last location.'
+  suspicious_activity_detected: '&6🛡️ &fSuspicious activity detected!'
+  captcha_required: '&ePlease enter the captcha code:'
+  new_captcha_generated: '&6🛡️ &fNew captcha code generated!'
+  captcha_code: '&eCode: &a{captcha}'
+  captcha_instruction: '&7Type: &f/register {captcha}'
+  captcha_incorrect: '&cIncorrect captcha code. Please try again.'
+  registration_data_error: '&cError: registration data not found.'
+  already_connected: '&cYou are already connected!'
+  must_be_connected: '&cYou must be connected to use this command.'
+  not_registered: '&cYou are not registered.'
+  password_different_required: '&cThe new password must be different from the old
+    one.'
+  no_permission: '&cYou don''t have permission to use this command.'
+  players_only: '&cOnly players can use this command.'
+  player_must_be_online: '&cPlayer {player} must be online to bypass IP limit.'
+  account_deleted: '&cYour account has been deleted by an administrator.'
+  config_reload_error: '&cError reloading configuration.'
+  message_update_error: '&cError updating message.'
+  ip_limit_update_error: '&cError updating IP limitation.'
+  security_update_error: '&cError updating security.'
+  migration_started: '&eStarting migration from {source} to {destination}...'
+  migration_success: '&aMigration completed successfully!'
+  migration_restart_warning: '&c§lIMPORTANT: Restart the server to avoid bugs!'
+  migration_error: '&cError during migration: {error}'
+  invalid_database_type: '&cInvalid database type. Use: YAML, SQLITE, or MYSQL'
+
+titles:
+  welcome_title: Welcome!
+  welcome_subtitle: Use /login <password> to log in
+  incorrect_password_title: Error
+  incorrect_password_subtitle: Incorrect password!
+  registration_title: Registration
+  registration_subtitle: Your account has been created successfully!
+  password_change_title: Password Changed
+  password_change_subtitle: Your password has been changed successfully!
+
+password:
+  errors:
+    length: '&cPassword must be at least 8 characters long'
+    uppercase: '&cPassword must contain at least one uppercase letter (A-Z)'
+    digit: '&cPassword must contain at least one digit (0-9)'
+    special: '&cPassword must contain at least one special character (@#$%^&+=!*()_-[]{}|;:,.<>?)'

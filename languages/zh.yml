@@ -1,0 +1,93 @@
+# Chinese language file for SuperAuth
+# You can modify this file to customize messages
+
+prefix: '&8[&cSuperAuth&8] &r'
+
+login:
+  title: '&b登录'
+  subtitle: '&7请使用 &e/login <密码> &7登录'
+  incorrect_password: '&c密码错误！'
+  success_chat: '&a登录成功！'
+  tp_last_location: '&e您已被传送到上次位置。'
+  success_title: '&a登录成功！'
+  required: '&e请使用 &6/login <密码> &e登录。'
+
+register:
+  title: '&b注册'
+  subtitle: '&7请使用 &e/register <密码> <确认> &7创建账户'
+  password_requirements: '&c密码必须至少包含6个字符，包括大写字母、小写字母和数字。'
+  success_chat: '&a注册成功！欢迎加入服务器。'
+  success_title: '&a注册成功！'
+  already_registered: '&c您已经注册了！'
+  password_mismatch: '&c密码不匹配！'
+  required: '&e请使用 &6/register <密码> <确认> &e进行注册。'
+  ip_limit_exceeded: '&c此IP地址已达到允许的最大账户数量（{limit}个账户）。如有疑问请联系管理员。'
+
+changepassword:
+  success: '&a密码修改成功！'
+  old_password_incorrect: '&c旧密码错误！'
+  password_mismatch: '&c新密码不匹配！'
+
+admin:
+  user_unregistered: '&a玩家 &e{player} &a已成功注销！'
+  user_not_found: '&c玩家 &e{player} &c未注册！'
+  ip_limit_bypassed: '&a已为 &e{player} &a绕过IP限制。'
+  config_reloaded: '&a配置重新加载成功！'
+  message_updated: '&a消息 &e{path} &a更新成功！'
+  ip_limit_updated: '&aIP限制 &e{setting} &a更新成功！'
+  security_updated: '&a安全设置 &e{setting} &a更新成功！'
+  database_updated: '&a数据库 &e{setting} &a更新成功！'
+  language_updated: '&a语言已更改为 &e{language}&a。'
+  invalid_setting: '&c无效参数。使用 ''enabled'', ''max_accounts_per_ip'', ''allow_ip_change'',
+    ''ip_change_cooldown'' 或 ''admin_bypass''。'
+  migrate_command_not_implemented: '&c迁移命令尚未实现。'
+
+# Messages for configurable actions
+actions:
+  welcome_message: '&a欢迎来到服务器！'
+  registration_success: '&a注册成功！欢迎加入我们！'
+  login_success: '&a登录成功！欢迎回来！'
+  password_change_success: '&a密码修改成功！'
+  teleporting_to_spawn: '&7您已被传送到出生点。'
+  teleporting_to_last_location: '&7您已被传送到上次位置。'
+  suspicious_activity_detected: '&6🛡️ &f检测到可疑活动！'
+  captcha_required: '&e请输入验证码：'
+  new_captcha_generated: '&6🛡️ &f已生成新的验证码！'
+  captcha_code: '&e验证码：&a{captcha}'
+  captcha_instruction: '&7输入：&f/register {captcha}'
+  captcha_incorrect: '&c验证码错误。请重试。'
+  registration_data_error: '&c错误：未找到注册数据。'
+  already_connected: '&c您已经连接了！'
+  must_be_connected: '&c您必须连接才能使用此命令。'
+  not_registered: '&c您未注册。'
+  password_different_required: '&c新密码必须与旧密码不同。'
+  no_permission: '&c您没有权限使用此命令。'
+  players_only: '&c只有玩家才能使用此命令。'
+  player_must_be_online: '&c玩家 {player} 必须在线才能绕过IP限制。'
+  account_deleted: '&c您的账户已被管理员删除。'
+  config_reload_error: '&c重新加载配置时出错。'
+  message_update_error: '&c更新消息时出错。'
+  ip_limit_update_error: '&c更新IP限制时出错。'
+  security_update_error: '&c更新安全设置时出错。'
+  migration_started: '&e开始从 {source} 迁移到 {destination}...'
+  migration_success: '&a迁移成功完成！'
+  migration_restart_warning: '&c§l重要：重启服务器以避免错误！'
+  migration_error: '&c迁移过程中出错：{error}'
+  invalid_database_type: '&c无效的数据库类型。使用：YAML、SQLITE 或 MYSQL'
+
+titles:
+  welcome_title: 欢迎！
+  welcome_subtitle: 请使用 /login <密码> 登录
+  incorrect_password_title: 错误
+  incorrect_password_subtitle: 密码错误！
+  registration_title: 注册
+  registration_subtitle: 您的账户已成功创建！
+  password_change_title: 密码已更改
+  password_change_subtitle: 您的密码已成功更改！
+
+password:
+  errors:
+    length: '&c密码必须至少包含8个字符'
+    uppercase: '&c密码必须包含至少一个大写字母 (A-Z)'
+    digit: '&c密码必须包含至少一个数字 (0-9)'
+    special: '&c密码必须包含至少一个特殊字符 (@#$%^&+=!*()_-[]{}|;:,.<>?)'

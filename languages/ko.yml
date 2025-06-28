@@ -1,0 +1,93 @@
+# Korean language file for SuperAuth
+# You can modify this file to customize messages
+
+prefix: '&8[&cSuperAuth&8] &r'
+
+login:
+  title: '&b로그인'
+  subtitle: '&7&f/login <비밀번호> &7로 로그인하세요'
+  incorrect_password: '&c잘못된 비밀번호!'
+  success_chat: '&a로그인 성공!'
+  tp_last_location: '&e마지막 위치로 이동되었습니다.'
+  success_title: '&a로그인 성공!'
+  required: '&e&6/login <비밀번호> &e로 로그인하세요.'
+
+register:
+  title: '&b회원가입'
+  subtitle: '&7&f/register <비밀번호> <확인> &7로 계정을 생성하세요'
+  password_requirements: '&c비밀번호는 최소 6자, 대문자, 소문자, 숫자를 포함해야 합니다.'
+  success_chat: '&a회원가입이 성공적으로 완료되었습니다! 서버에 오신 것을 환영합니다.'
+  success_title: '&a회원가입이 성공적으로 완료되었습니다!'
+  already_registered: '&c이미 등록되어 있습니다!'
+  password_mismatch: '&c비밀번호가 일치하지 않습니다!'
+  required: '&e&6/register <비밀번호> <확인> &e로 회원가입하세요.'
+  ip_limit_exceeded: '&c이 IP 주소는 허용된 최대 계정 수에 도달했습니다 ({limit}개 계정). 관리자에게 문의하세요.'
+
+changepassword:
+  success: '&a비밀번호가 성공적으로 변경되었습니다!'
+  old_password_incorrect: '&c이전 비밀번호가 잘못되었습니다!'
+  password_mismatch: '&c새 비밀번호가 일치하지 않습니다!'
+
+admin:
+  user_unregistered: '&a플레이어 &e{player} &a가 성공적으로 등록 해제되었습니다!'
+  user_not_found: '&c플레이어 &e{player} &c는 등록되지 않았습니다!'
+  ip_limit_bypassed: '&e{player} &a의 IP 제한이 우회되었습니다.'
+  config_reloaded: '&a구성이 성공적으로 다시 로드되었습니다!'
+  message_updated: '&a메시지 &e{path} &a가 성공적으로 업데이트되었습니다!'
+  ip_limit_updated: '&aIP 제한 &e{setting} &a가 성공적으로 업데이트되었습니다!'
+  security_updated: '&a보안 &e{setting} &a가 성공적으로 업데이트되었습니다!'
+  database_updated: '&a데이터베이스 &e{setting} &a가 성공적으로 업데이트되었습니다!'
+  language_updated: '&a언어가 &e{language} &a로 변경되었습니다.'
+  invalid_setting: '&c잘못된 매개변수입니다. ''enabled'', ''max_accounts_per_ip'', ''allow_ip_change'',
+    ''ip_change_cooldown'' 또는 ''admin_bypass''를 사용하세요.'
+  migrate_command_not_implemented: '&c마이그레이션 명령이 아직 구현되지 않았습니다.'
+
+# Messages for configurable actions
+actions:
+  welcome_message: '&a서버에 오신 것을 환영합니다!'
+  registration_success: '&a등록 성공! 우리 가족이 되어주셔서 환영합니다!'
+  login_success: '&a로그인 성공! 다시 오신 것을 환영합니다!'
+  password_change_success: '&a비밀번호가 성공적으로 변경되었습니다!'
+  teleporting_to_spawn: '&7스폰 지점으로 텔레포트되었습니다.'
+  teleporting_to_last_location: '&7마지막 위치로 텔레포트되었습니다.'
+  suspicious_activity_detected: '&6️ &f의심스러운 활동이 감지되었습니다!'
+  captcha_required: '&e캡차 코드를 입력하세요:'
+  new_captcha_generated: '&6🛡️ &f새 캡차 코드가 생성되었습니다!'
+  captcha_code: '&e코드: &a{captcha}'
+  captcha_instruction: '&7입력: &f/register {captcha}'
+  captcha_incorrect: '&c잘못된 캡차 코드입니다. 다시 시도하세요.'
+  registration_data_error: '&c오류: 등록 데이터를 찾을 수 없습니다.'
+  already_connected: '&c이미 연결되어 있습니다!'
+  must_be_connected: '&c이 명령을 사용하려면 연결되어 있어야 합니다.'
+  not_registered: '&c등록되지 않았습니다.'
+  password_different_required: '&c새 비밀번호는 이전 비밀번호와 달라야 합니다.'
+  no_permission: '&c이 명령을 사용할 권한이 없습니다.'
+  players_only: '&c이 명령은 플레이어만 사용할 수 있습니다.'
+  player_must_be_online: '&cIP 제한을 우회하려면 플레이어 {player}가 온라인 상태여야 합니다.'
+  account_deleted: '&c관리자에 의해 계정이 삭제되었습니다.'
+  config_reload_error: '&c구성을 다시 로드하는 중 오류가 발생했습니다.'
+  message_update_error: '&c메시지를 업데이트하는 중 오류가 발생했습니다.'
+  ip_limit_update_error: '&cIP 제한을 업데이트하는 중 오류가 발생했습니다.'
+  security_update_error: '&c보안을 업데이트하는 중 오류가 발생했습니다.'
+  migration_started: '&e{source}에서 {destination}으로 마이그레이션을 시작합니다...'
+  migration_success: '&a마이그레이션이 성공적으로 완료되었습니다!'
+  migration_restart_warning: '&c§l중요: 버그를 피하기 위해 서버를 재시작하세요!'
+  migration_error: '&c마이그레이션 중 오류가 발생했습니다: {error}'
+  invalid_database_type: '&c잘못된 데이터베이스 유형입니다. YAML, SQLITE 또는 MYSQL을 사용하세요'
+
+titles:
+  welcome_title: 환영합니다!
+  welcome_subtitle: /login <비밀번호>로 로그인하세요
+  incorrect_password_title: 오류
+  incorrect_password_subtitle: 잘못된 비밀번호!
+  registration_title: 회원가입
+  registration_subtitle: 계정이 성공적으로 생성되었습니다!
+  password_change_title: 비밀번호 변경됨
+  password_change_subtitle: 비밀번호가 성공적으로 변경되었습니다!
+
+password:
+  errors:
+    length: '&c비밀번호는 최소 8자 이상이어야 합니다'
+    uppercase: '&c비밀번호에는 대문자(A-Z)가 최소 1개 포함되어야 합니다'
+    digit: '&c비밀번호에는 숫자(0-9)가 최소 1개 포함되어야 합니다'
+    special: '&c비밀번호에는 특수문자(@#$%^&+=!*()_-[]{}|;:,.<>?)가 최소 1개 포함되어야 합니다'

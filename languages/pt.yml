@@ -1,0 +1,97 @@
+# Portuguese language file for SuperAuth
+# You can modify this file to customize messages
+
+prefix: '&8[&cSuperAuth&8] &r'
+
+login:
+  title: '&bLogin'
+  subtitle: '&7Use &e/login <senha> &7para entrar'
+  incorrect_password: '&cSenha incorreta!'
+  success_chat: '&aLogin realizado com sucesso!'
+  tp_last_location: '&eVocê foi teleportado para sua última localização.'
+  success_title: '&aLogin realizado com sucesso!'
+  required: '&eUse &6/login <senha> &epara entrar.'
+
+register:
+  title: '&bRegistro'
+  subtitle: '&7Use &e/register <senha> <confirmação> &7para criar uma conta'
+  password_requirements: '&cA senha deve ter pelo menos 6 caracteres, uma maiúscula,
+    uma minúscula e um número.'
+  success_chat: '&aRegistro realizado com sucesso! Bem-vindo ao servidor.'
+  success_title: '&aRegistro realizado com sucesso!'
+  already_registered: '&cVocê já está registrado!'
+  password_mismatch: '&cAs senhas não coincidem!'
+  required: '&eUse &6/register <senha> <confirmação> &epara se registrar.'
+  ip_limit_exceeded: '&cEste endereço IP atingiu o número máximo de contas permitidas
+    ({limit} max contas). Entre em contato com um administrador se isso for um erro.'
+
+changepassword:
+  success: '&aSenha alterada com sucesso!'
+  old_password_incorrect: '&cSenha antiga está incorreta!'
+  password_mismatch: '&cAs novas senhas não coincidem!'
+
+admin:
+  user_unregistered: '&aJogador &e{player} &afoi desregistrado com sucesso!'
+  user_not_found: '&cJogador &e{player} &cnão está registrado!'
+  ip_limit_bypassed: '&aLimite de IP ignorado para &e{player}&a.'
+  config_reloaded: '&aConfiguração recarregada com sucesso!'
+  message_updated: '&aMensagem &e{path} &aatualizada com sucesso!'
+  ip_limit_updated: '&aLimitação de IP &e{setting} &aatualizada com sucesso!'
+  security_updated: '&aSegurança &e{setting} &aatualizada com sucesso!'
+  database_updated: '&aBanco de dados &e{setting} &aatualizado com sucesso!'
+  language_updated: '&aIdioma alterado para &e{language}&a.'
+  invalid_setting: '&cParâmetro inválido. Use ''enabled'', ''max_accounts_per_ip'',
+    ''allow_ip_change'', ''ip_change_cooldown'' ou ''admin_bypass''.'
+  migrate_command_not_implemented: '&cComando de migração ainda não implementado.'
+
+# Messages for configurable actions
+actions:
+  welcome_message: '&aBem-vindo ao servidor!'
+  registration_success: '&aRegistro realizado com sucesso! Bem-vindo entre nós!'
+  login_success: '&aLogin realizado com sucesso! Bem-vindo de volta!'
+  password_change_success: '&aSenha alterada com sucesso!'
+  teleporting_to_spawn: '&7Você foi teleportado para o spawn.'
+  teleporting_to_last_location: '&7Você foi teleportado para sua última localização.'
+  suspicious_activity_detected: '&6🛡️ &fAtividade suspeita detectada!'
+  captcha_required: '&eDigite o código captcha:'
+  new_captcha_generated: '&6🛡️ &fNovo código captcha gerado!'
+  captcha_code: '&eCódigo: &a{captcha}'
+  captcha_instruction: '&7Digite: &f/register {captcha}'
+  captcha_incorrect: '&cCódigo captcha incorreto. Tente novamente.'
+  registration_data_error: '&cErro: dados de registro não encontrados.'
+  already_connected: '&cVocê já está conectado!'
+  must_be_connected: '&cVocê deve estar conectado para usar este comando.'
+  not_registered: '&cVocê não está registrado.'
+  password_different_required: '&cA nova senha deve ser diferente da antiga.'
+  no_permission: '&cVocê não tem permissão para usar este comando.'
+  players_only: '&cApenas jogadores podem usar este comando.'
+  player_must_be_online: '&cJogador {player} deve estar online para ignorar limite
+    de IP.'
+  account_deleted: '&cSua conta foi deletada por um administrador.'
+  config_reload_error: '&cErro ao recarregar configuração.'
+  message_update_error: '&cErro ao atualizar mensagem.'
+  ip_limit_update_error: '&cErro ao atualizar limitação de IP.'
+  security_update_error: '&cErro ao atualizar segurança.'
+  migration_started: '&eIniciando migração de {source} para {destination}...'
+  migration_success: '&aMigração concluída com sucesso!'
+  migration_restart_warning: '&c§lIMPORTANTE: Reinicie o servidor para evitar bugs!'
+  migration_error: '&cErro durante a migração: {error}'
+  invalid_database_type: '&cTipo de banco de dados inválido. Use: YAML, SQLITE ou
+    MYSQL'
+
+titles:
+  welcome_title: Bem-vindo!
+  welcome_subtitle: Use /login <senha> para entrar
+  incorrect_password_title: Erro
+  incorrect_password_subtitle: Senha incorreta!
+  registration_title: Registro
+  registration_subtitle: Sua conta foi criada com sucesso!
+  password_change_title: Senha alterada
+  password_change_subtitle: Sua senha foi alterada com sucesso!
+
+password:
+  errors:
+    length: '&cA senha deve ter pelo menos 8 caracteres'
+    uppercase: '&cA senha deve conter pelo menos uma letra maiúscula (A-Z)'
+    digit: '&cA senha deve conter pelo menos um número (0-9)'
+    special: '&cA senha deve conter pelo menos um caractere especial (@#$%^&+=!*()_-[]{}|;:,.<>?)'
